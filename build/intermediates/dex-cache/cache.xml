@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\AppData\Local\Android\sdk2\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_543a86772b577e115688902fb858df3358682c26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_70ce2dcc80af46afc3de984d7a2a8c02ec8a6174.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_9d3a20c6671ed92282749256bafb18960c4cabaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_97ba0c4e2f3e19ab35bb96a9eedc1ebc1c82e27d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\okio-1.8.0_83ef189a8292173cfa3ff4dcd5192637b82624ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_6f08e52e084128e75c69cf12a0f508ee1f7c1e80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_052258568752c1b0c3e7dcb0de47e82b20792af4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_215686a2d06069dfcbed1744d9bcf5eda2700547.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_94b5db22c37f9ad0c05a89e026361afb2df3fc35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_57be0ef89aeb46ee4a0aaf3df9eac991be7e2749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_b765e0d3d84ceb34c94fc684fcc96c89925049f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_cf1139150a35ab8522d1c273f391f198f4f86a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_215686a2d06069dfcbed1744d9bcf5eda2700547.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_70ce2dcc80af46afc3de984d7a2a8c02ec8a6174.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_de19394ae3829c71fa0e96e7ca41bc6e5c8990d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_d504925ced11de40414306a82488b6ef7b9c654d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_cf1139150a35ab8522d1c273f391f198f4f86a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\gson-2.7_b7942178475101e2f6d02c69801e5a31a84b3c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_052258568752c1b0c3e7dcb0de47e82b20792af4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_9d3a20c6671ed92282749256bafb18960c4cabaf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_e4662b394be339e7cd19b0140ead5cdeabded9c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_57be0ef89aeb46ee4a0aaf3df9eac991be7e2749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_b765e0d3d84ceb34c94fc684fcc96c89925049f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_acc69bcd17f50d4a8d9c88e2a68afd9d66f7ef86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_5bc9298f45dd807eeefcb199a0781fd6331b7712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_d504925ced11de40414306a82488b6ef7b9c654d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_5a0134e7260b94605f87c3f555a2c28f5fad28bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_fbe81524d33149edd27c4708d72e940e0f5ef35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_f9bac8bbbb0fec20145445c30ee7398068969663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_acc69bcd17f50d4a8d9c88e2a68afd9d66f7ef86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\AppData\Local\Android\sdk2\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_543a86772b577e115688902fb858df3358682c26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_215686a2d06069dfcbed1744d9bcf5eda2700547.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_cf1139150a35ab8522d1c273f391f198f4f86a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_052258568752c1b0c3e7dcb0de47e82b20792af4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_f9bac8bbbb0fec20145445c30ee7398068969663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_cdf4f020baff517fa83a467070c5423ff965d5f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\gson-2.7_b7942178475101e2f6d02c69801e5a31a84b3c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_fbe81524d33149edd27c4708d72e940e0f5ef35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_b765e0d3d84ceb34c94fc684fcc96c89925049f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_70ce2dcc80af46afc3de984d7a2a8c02ec8a6174.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_e4662b394be339e7cd19b0140ead5cdeabded9c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_d0f589ed110e76ed567faa053d81561905982a75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_94b5db22c37f9ad0c05a89e026361afb2df3fc35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_94b5db22c37f9ad0c05a89e026361afb2df3fc35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_d0f589ed110e76ed567faa053d81561905982a75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\org.threeten\threetenbp\1.3.2\3383b1b96ab32688073ef99dd7d53b3d03f2ccde\threetenbp-1.3.2-no-tzdb.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3383b1b96ab32688073ef99dd7d53b3d03f2ccde">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\threetenbp-1.3.2-no-tzdb_f1d180ee0b317e3092d3ffad20a8b4f682bfb584.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_6f08e52e084128e75c69cf12a0f508ee1f7c1e80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\okio-1.8.0_83ef189a8292173cfa3ff4dcd5192637b82624ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_e4662b394be339e7cd19b0140ead5cdeabded9c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_de19394ae3829c71fa0e96e7ca41bc6e5c8990d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_cdf4f020baff517fa83a467070c5423ff965d5f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\Gradle\gradle-3.2-patched-docs\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_97ba0c4e2f3e19ab35bb96a9eedc1ebc1c82e27d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_5bc9298f45dd807eeefcb199a0781fd6331b7712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_d504925ced11de40414306a82488b6ef7b9c654d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.jakewharton.threetenabp\threetenabp\1.0.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6c689b6b0a0c6219bdd55eec9009b2ea1d33116e">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.jakewharton.threetenabp-threetenabp-1.0.4_a91b6c1e10f603d4a028e77ecef31f87341d082b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_acc69bcd17f50d4a8d9c88e2a68afd9d66f7ef86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_57be0ef89aeb46ee4a0aaf3df9eac991be7e2749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_f9bac8bbbb0fec20145445c30ee7398068969663.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_5a0134e7260b94605f87c3f555a2c28f5fad28bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_5a0134e7260b94605f87c3f555a2c28f5fad28bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_fbe81524d33149edd27c4708d72e940e0f5ef35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Zivko\AppData\Local\Android\sdk2\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_543a86772b577e115688902fb858df3358682c26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Java\AndroidKurs\Assignment21\Weather\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_5bc9298f45dd807eeefcb199a0781fd6331b7712.jar" />
+    </item>
+
+</items>
