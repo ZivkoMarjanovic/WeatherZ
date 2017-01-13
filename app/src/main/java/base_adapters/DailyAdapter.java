@@ -7,27 +7,15 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import com.example.zivko.weather.R;
-import com.j256.ormlite.android.apptools.OpenHelperManager;
+import com.squareup.picasso.Picasso;
 
-import net.Setvice;
-
-import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
 
 import model_daily.Daily;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-import static android.R.id.list;
-import static android.widget.Toast.LENGTH_LONG;
 
 /**
  * Created by Živko on 2016-11-28.
@@ -37,12 +25,12 @@ public class DailyAdapter extends BaseAdapter {
 
     Context context;
     Daily daily;
-    String[] day = {"Next day", "In two days", "In three days", "In four days", "In five days"};
+    String[] day = new String[6];
 
     public DailyAdapter(Context context, Daily daily) {
         this.context = context;
         this.daily = daily;
-
+        day = context.getResources().getStringArray(R.array.next_day);
     }
 
     @Override
@@ -64,56 +52,42 @@ public class DailyAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row = layoutInflater.inflate(R.layout.daily_single_row, viewGroup, false);
-        getArtistByName(row, i);
+        setDailyDates(row, i);
         return row;
     }
 
-    private void getArtistByName(final View row, int i) {
-
+    private void setDailyDates(final View row, int i) {
 
         final TextView days = (TextView) row.findViewById(R.id.days);
         days.setText(day[i]);
 
         final ImageView icon = (ImageView) row.findViewById(R.id.icon);
         String icon_id = daily.getList().get(i).getWeather().get(0).getIcon();
-        // icon.setImageDrawable();
+        Picasso.with(context)
+                .load("http://openweathermap.org/img/w/"+icon_id+".png")
+                .into(icon);
 
         final TextView rain = (TextView) row.findViewById(R.id.rain);
-        rain.setText(String.format(Locale.CANADA, "%.2f", daily.getList().get(i).getRain()));
+        if (daily.getList().get(i).getRain() != null && !daily.getList().get(i).getRain().isNaN()) {
+            rain.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getRain()));
+        } else {
+            rain.setText("0.00");
+        }
 
         final TextView wind = (TextView) row.findViewById(R.id.wind);
-        wind.setText(String.format(Locale.CANADA, "%.2f", daily.getList().get(i).getSpeed()));
+        wind.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getSpeed()));
 
         final TextView degrees = (TextView) row.findViewById(R.id.degrees);
-        degrees.setText(String.format(Locale.CANADA, "%.2f", daily.getList().get(i).getTemp().getMax()-273.15));
+        degrees.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getTemp().getMax()-273.15));
 
         final TextView degrees2 = (TextView) row.findViewById(R.id.degrees2);
-        degrees2.setText(String.format(Locale.CANADA, "%.2f", daily.getList().get(i).getTemp().getMin()-273.15));
+        degrees2.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getTemp().getMin()-273.15));
 
 
     }
 
-
-   /* public void refreshAdapter() {
-        try {
-            list = getDatabaseHelper().getShoppingListDao().queryForAll();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        if (dataBaseHelper != null) {
-            OpenHelperManager.releaseHelper();
-            dataBaseHelper = null;
-        }
+    public void refreshDailyAdapter(Daily daily) {
+        this.daily = daily;
         this.notifyDataSetChanged();
     }
-
-    public DataBaseHelper getDatabaseHelper() {
-        if (dataBaseHelper == null) {
-            dataBaseHelper = OpenHelperManager.getHelper(context, DataBaseHelper.class);
-        }
-        return dataBaseHelper;
-    }
-*/
-
 }

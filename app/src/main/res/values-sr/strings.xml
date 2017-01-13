@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ВремеЗ...</string>
+    <string name="settings">Подесаванја</string>
+    <string name="addlocation">Моје Локације</string>
+    <string name="about">О апликацији</string>
+    <string name="refresh">Освежи</string>
+    <string name="turn_on">Молим уклјучите Васe \n ЛОКАЦИЈЕ. \nДа ли желите да идете у  подешаванја локације?</string>
+    <string name="ok">ОК</string>
+    <string name="no">НО</string>
+    <string name="back">Назад</string>
+    <string name="add_location">Додај Локацију</string>
+    <string name="hint">Унеси нову локацију</string>
+    <string name="save">Сачувај</string>
+    <string name="humidity">Влажност</string>
+    <string name="pressure">Притисак: </string>
+    <string name="max_temp">Макс тем: </string>
+    <string name="wind"> Ветар: </string>
+    <string name="cloudiness">Облачност: </string>
+    <string name="dayinweek">Прогноза за: </string>
+    <string name="rain">Киша: </string>
+    <string name="perc">%</string>
+    <string name="ms">м/с</string>
+    <string name="noInternet">Нема интернета.</string>
+    <string name="currentLocation">Тренутна Локација</string>
+    <string name="noLocation">Није пронасао локацију.</string>
+    <string name="madeBy">Апликацију направио: \nМарјановић Живко</string>
+    <string name="empty"></string>
+
+    <string name="weather_settings">ВремеЗ...   Подесаванја</string>
+    <string name="choose_location">Изаберите омилјену локацију...</string>
+    <string name="locations">Локације</string>
+    <string name="looking">Тражи локацију</string>
+    <string name="sanFrancisco">Сан Франциско</string>
+    <string name="barcelona">Барселона</string>
+
+    <string-array name="next_day">
+        <item>"Прогноза за ДАНАС"</item>
+        <item>"Сутра"</item>
+        <item>"Прекосутра"</item>
+        <item>"За три дана"</item>
+        <item>"За четири дана"</item>
+        <item>"За пет дана"</item>
+    </string-array>
+
+</resources>

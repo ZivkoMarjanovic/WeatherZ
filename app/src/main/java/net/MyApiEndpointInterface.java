@@ -1,8 +1,6 @@
 package net;
 
-/**
- * Created by milossimic on 11/10/16.
- */
+
 
 import java.util.Map;
 
@@ -15,21 +13,17 @@ import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 
 
-/**
- * Klasa koja opisuje koji tj mapira putanju servisa
- * opisuje koji metod koristimo ali i sta ocekujemo kao rezultat
- *
- * */
+
 public interface MyApiEndpointInterface {
 
     @GET("data/2.5/weather")
-    Call<ExampleNew> getExample(@QueryMap Map<String, String> city_id);
+    Call<ExampleNew> getExample(@QueryMap Map<String, Double> latLon,@QueryMap Map<String, String> city_id);
 
     @GET("data/2.5/forecast/daily")
-    Call<Daily> getDailyForecast(@QueryMap Map<String, String> city_id);
+    Call<Daily> getDailyForecast(@QueryMap Map<String, Double> latLon, @QueryMap Map<String, String> city_id);
 
     @GET("data/2.5/forecast")
-    Call<Forecast> getForecast(@QueryMap Map<String, String> city_id);
+    Call<Forecast> getForecast(@QueryMap Map<String, Double> latLon,@QueryMap Map<String, String> city_id);
 
 
 }

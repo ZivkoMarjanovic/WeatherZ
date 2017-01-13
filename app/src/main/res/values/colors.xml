@@ -6,4 +6,6 @@
     <color name="toolbar">#b000</color>
     <color name="title">#9999</color>
     <color name="title1">#f555</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 </resources>

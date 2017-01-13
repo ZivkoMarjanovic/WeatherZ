@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="10dp">
+    android:padding="10dp"
+    >
 
     <LinearLayout
         android:layout_width="0dp"
@@ -25,6 +26,7 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/Dark"
             android:id="@+id/days"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,49 +42,55 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="left"
+                android:gravity="start"
                 android:layout_weight="4"
-                android:text="Rain: "
+                android:text="@string/rain"
                 />
 
             <TextView
+                style="@style/Dark"
                 android:id="@+id/rain"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_weight="3" />
+                android:layout_weight="4" />
 
             <TextView
+                style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="left|center_vertical"
+                android:gravity="start|center_vertical"
                 android:layout_weight="3"
-                android:text="%"
+                android:text="@string/perc"
                 android:paddingRight="10dp"/>
 
 
             <TextView
+                style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="right|center_vertical"
+                android:gravity="end|center_vertical"
                 android:layout_weight="4"
-                android:text="Wind: " />
+                android:text="@string/wind" />
 
             <TextView
+                style="@style/Dark"
                 android:id="@+id/wind"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_weight="3" />
+                android:layout_weight="4" />
 
             <TextView
+                style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="left|center_vertical"
                 android:layout_weight="3"
-                android:text="m/s" />
+                android:text="@string/ms" />
 
 
         </LinearLayout>
@@ -94,17 +102,19 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:paddingLeft="10dp">
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
 
         <TextView
+            style="@style/Dark"
             android:id="@+id/degrees"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:paddingRight="10dp"
             android:gravity="right"/>
 
         <TextView
+            style="@style/Dark"
             android:id="@+id/degrees2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
