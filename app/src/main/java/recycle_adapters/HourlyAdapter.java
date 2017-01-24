@@ -73,15 +73,15 @@ public class HourlyAdapter extends RecyclerView.Adapter<HourlyAdapter.MyVH> {
                 .into(holder.icon);
 
         if (myForecastList.get(i).getRain() != null && myForecastList.get(i).getRain().get3h() != null && !myForecastList.get(i).getRain().get3h().isNaN()) {
-            holder.rain.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getRain().get3h()));
+            holder.rain.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getRain().get3h()));
         } else {
-            holder.rain.setText("0.00");
+            holder.rain.setText("0 ");
         }
-        holder.wind.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getWind().getSpeed()));
+        holder.wind.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getWind().getSpeed()));
 
-        holder.degrees.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getMain().getTempMax() - 273.15));
+        holder.degrees.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getMain().getTemp() - 273.15)+ " \u00B0");
 
-        holder.degrees2.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getMain().getTempMin() - 273.15));
+        holder.degrees2.setText("");
 
 
     }

@@ -10,7 +10,9 @@ import android.widget.TextView;
 import com.example.zivko.weather.R;
 import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -33,7 +35,7 @@ public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.MyVH> {
         }
 
     public interface DailyOnItemClickListener {
-        void DailyOnClick(int position, Daily daily);
+        void DailyOnClick(View v, int position, Daily daily);
     }
 
     public void updateDaily(Daily newDaily) {
@@ -52,31 +54,41 @@ public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.MyVH> {
 
     @Override
     public void onBindViewHolder(MyVH holder, int position) {
-        day = context.getResources().getStringArray(R.array.next_day);
-        holder.days.setText(day[position]);
+        //day = context.getResources().getStringArray(R.array.next_day);
+        int dt = daily.getList().get(position).getDt();
+        long longDT = (long) dt;
+        Date p = new Date(longDT * 1000);
+        holder.days.setText(new SimpleDateFormat("EEEE", Locale.getDefault()).format(p));
+
+        //holder.days.setText(day[position]);
         String icon_id = daily.getList().get(position).getWeather().get(0).getIcon();
         Picasso.with(context)
                 .load("http://openweathermap.org/img/w/" + icon_id + ".png")
                 .into(holder.icon);
 
         if (daily.getList().get(position).getRain() != null && !daily.getList().get(position).getRain().isNaN()) {
-            holder.rain.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(position).getRain()));
+            holder.rain.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(position).getRain()));
         } else {
-            holder.rain.setText("0.00");
+            holder.rain.setText("0 ");
         }
 
-        holder.wind.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(position).getSpeed()));
+        if (daily.getList().get(position).getSpeed()!= null && !daily.getList().get(position).getSpeed().isNaN()) {
+            holder.wind.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(position).getSpeed()));
+        }
 
-        holder.degrees.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(position).getTemp().getMax() - 273.15));
+        if (daily.getList().get(position).getTemp().getMax()!= null && !daily.getList().get(position).getTemp().getMax().isNaN()) {
+            holder.degrees.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(position).getTemp().getMax() - 273.15)+ " \u00B0");
+        }
 
-        holder.degrees2.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(position).getTemp().getMin() - 273.15));
-
+        if (daily.getList().get(position).getTemp().getMin()!= null && !daily.getList().get(position).getTemp().getMin().isNaN()) {
+            holder.degrees2.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(position).getTemp().getMin() - 273.15)+ " \u00B0");
+        }
 
     }
 
     @Override
     public int getItemCount() {
-        return daily.getCnt();
+        return 6;
     }
 
     public class MyVH extends RecyclerView.ViewHolder implements RecyclerView.OnClickListener {
@@ -101,7 +113,7 @@ public class DailyAdapter extends RecyclerView.Adapter<DailyAdapter.MyVH> {
         @Override
         public void onClick(View view) {
             int position = getAdapterPosition();
-            myOnItemClickListener.DailyOnClick(position, daily);
+            myOnItemClickListener.DailyOnClick(view, position, daily);
         }
     }
 }

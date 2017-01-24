@@ -44,7 +44,7 @@ public class Settings extends PreferenceActivity implements SharedPreferences.On
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
         toolbar.setTitle(getResources().getString(R.string.weather_settings));
-        toolbar.setBackgroundColor(getResources().getColor(R.color.toolbar));
+        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar3));
 
         addPreferencesFromResource(R.xml.settings);

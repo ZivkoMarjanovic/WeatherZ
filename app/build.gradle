@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "com.zivko.weather"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 3
         versionName "1.2"

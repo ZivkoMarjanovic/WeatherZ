@@ -69,19 +69,19 @@ public class DailyAdapter extends BaseAdapter {
 
         final TextView rain = (TextView) row.findViewById(R.id.rain);
         if (daily.getList().get(i).getRain() != null && !daily.getList().get(i).getRain().isNaN()) {
-            rain.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getRain()));
+            rain.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(i).getRain()));
         } else {
             rain.setText("0.00");
         }
 
         final TextView wind = (TextView) row.findViewById(R.id.wind);
-        wind.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getSpeed()));
+        wind.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(i).getSpeed()));
 
         final TextView degrees = (TextView) row.findViewById(R.id.degrees);
-        degrees.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getTemp().getMax()-273.15));
+        degrees.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(i).getTemp().getMax()-273.15));
 
         final TextView degrees2 = (TextView) row.findViewById(R.id.degrees2);
-        degrees2.setText(String.format(Locale.getDefault(), "%.2f", daily.getList().get(i).getTemp().getMin()-273.15));
+        degrees2.setText(String.format(Locale.ENGLISH, "%.0f", daily.getList().get(i).getTemp().getMin()-273.15));
 
 
     }

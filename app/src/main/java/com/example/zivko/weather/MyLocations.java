@@ -54,7 +54,6 @@ public class MyLocations extends AppCompatActivity implements recycle_adapters.M
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         toolbar.setTitle(getResources().getString(R.string.app_name));
-        toolbar.setBackgroundColor(getResources().getColor(R.color.toolbar));
         setSupportActionBar(toolbar);
 
         Button back = (Button) findViewById(R.id.back);

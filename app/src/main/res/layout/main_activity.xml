@@ -38,7 +38,6 @@
                 android:inputType="textMultiLine"
                 android:maxLines="1"
                 android:textSize="30sp"
-                android:text="City"
                 android:gravity="center"
                 />
 
@@ -72,7 +71,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_gravity="center_vertical|right"
+                android:gravity="center_horizontal|top"
                 android:textSize="40sp" />
 
 
@@ -88,7 +87,7 @@
                 style="@style/Transparent"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:padding="5dp"
                 android:text="@string/pressure"
                 android:layout_gravity="left"
@@ -99,10 +98,9 @@
                 android:id="@+id/pressure"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:padding="5dp"
-                android:text="@string/ok"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:gravity="left"
                 />
 
@@ -114,6 +112,7 @@
                 android:padding="5dp"
                 android:text="@string/humidity"
                 android:gravity="right"
+                android:layout_gravity="right"
                 />
 
             <TextView
@@ -123,8 +122,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:text="@string/ok"
                 android:gravity="right"
+                android:layout_gravity="right"
                />
 
 
@@ -141,7 +140,7 @@
                 style="@style/Transparent"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1"
                android:padding="5dp"
                 android:text="@string/max_temp"
                 android:gravity="left"/>
@@ -151,10 +150,10 @@
                 android:id="@+id/temp_max"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:padding="5dp"
-                android:text="@string/ok"
                 android:gravity="left"
+                android:layout_gravity="start"
                 />
 
             <TextView
@@ -173,8 +172,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:text="@string/ok"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:layout_gravity="right"/>
 
 
 
@@ -205,7 +204,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:text="@string/ok"
                 android:gravity="left"/>
 
 

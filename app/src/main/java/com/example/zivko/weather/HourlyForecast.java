@@ -5,6 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.transition.ChangeBounds;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.Transition;
+import android.view.Gravity;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +45,14 @@ public class HourlyForecast extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Slide slide = new Slide();
+        slide.setDuration(1000);
+        slide.setSlideEdge(Gravity.END);
+        ChangeBounds changeBounds= new ChangeBounds();
+        changeBounds.setDuration(1000);
+        getWindow().setSharedElementEnterTransition(changeBounds);
+        getWindow().setEnterTransition(slide);
+
         setContentView(R.layout.hourly_forecast);
 
 
@@ -48,8 +61,7 @@ public class HourlyForecast extends AppCompatActivity {
         lon = getIntent().getDoubleExtra("lon", 0.0);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
-        toolbar.setBackgroundColor(getResources().getColor(R.color.toolbar));
-        toolbar.setTitle(getResources().getString(R.string.app_name));
+       toolbar.setTitle(getResources().getString(R.string.app_name));
         setSupportActionBar(toolbar);
 
 

@@ -28,6 +28,8 @@
         <TextView
             style="@style/Dark"
             android:id="@+id/days"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,7 +48,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="start"
-                android:layout_weight="4"
+                android:layout_weight="3"
                 android:text="@string/rain"
                 />
 
@@ -55,15 +57,15 @@
                 android:id="@+id/rain"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="4" />
+                android:gravity="center_vertical|end"
+                android:layout_weight="3" />
 
             <TextView
                 style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="start|center_vertical"
-                android:layout_weight="3"
+                android:layout_weight="4"
                 android:text="@string/perc"
                 android:paddingRight="10dp"/>
 
@@ -81,15 +83,15 @@
                 android:id="@+id/wind"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="4" />
+                android:gravity="end|center_vertical"
+                android:layout_weight="2" />
 
             <TextView
                 style="@style/Dark"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="left|center_vertical"
-                android:layout_weight="3"
+                android:layout_weight="4"
                 android:text="@string/ms" />
 
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    style="@style/Dark">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -13,20 +14,46 @@
         android:padding="5dp"/>
 
     <TextView
+        android:background="@color/colorSecondary"
+        android:textColor="@color/white"
         android:id="@+id/lat"
         android:textSize="18sp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start"
         android:text="@string/dayinweek"/>
 
-    <TextView
-        android:id="@+id/lon"
-        android:textSize="20sp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        />
+        android:background="@color/colorSecondary"
+        android:textColor="@color/white">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/lon"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:transitionName="days"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
 
     <android.support.v7.widget.RecyclerView
         style="@style/Dark"

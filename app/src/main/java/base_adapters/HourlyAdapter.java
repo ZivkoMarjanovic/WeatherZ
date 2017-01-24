@@ -97,18 +97,18 @@ public class HourlyAdapter extends BaseAdapter {
 
         final TextView rain = (TextView) row.findViewById(R.id.rain);
         if (myForecastList.get(i).getRain() != null && myForecastList.get(i).getRain().get3h() != null && !myForecastList.get(i).getRain().get3h().isNaN()) {
-            rain.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getRain().get3h()));
+            rain.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getRain().get3h()));
         } else {
             rain.setText("0.00");
         }
         final TextView wind = (TextView) row.findViewById(R.id.wind);
-        wind.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getWind().getSpeed()));
+        wind.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getWind().getSpeed()));
 
         final TextView degrees = (TextView) row.findViewById(R.id.degrees);
-        degrees.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getMain().getTempMax() - 273.15));
+        degrees.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getMain().getTempMax() - 273.15));
 
         final TextView degrees2 = (TextView) row.findViewById(R.id.degrees2);
-        degrees2.setText(String.format(Locale.getDefault(), "%.2f", myForecastList.get(i).getMain().getTempMin() - 273.15));
+        degrees2.setText(String.format(Locale.ENGLISH, "%.0f", myForecastList.get(i).getMain().getTempMin() - 273.15));
 
     }
 }

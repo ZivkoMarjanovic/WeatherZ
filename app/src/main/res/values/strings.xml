@@ -11,7 +11,7 @@
     <string name="add_location">Add location</string>
     <string name="hint">Enter new location</string>
     <string name="save">Save</string>
-    <string name="humidity">Humidity</string>
+    <string name="humidity">Humidity:</string>
     <string name="pressure">Pressure: </string>
     <string name="max_temp">Max temp: </string>
     <string name="wind">  Wind: </string>
@@ -19,7 +19,7 @@
     <string name="dayinweek">Forecast for: </string>
     <string name="rain">Rain: </string>
     <string name="perc">%</string>
-    <string name="ms">m/s</string>
+    <string name="ms">\u0020m/s</string>
     <string name="noInternet">No internet.</string>
     <string name="currentLocation">Current location</string>
     <string name="noLocation">Could not find address.</string>

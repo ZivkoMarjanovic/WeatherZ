@@ -1,6 +1,8 @@
 package com.example.zivko.weather;
 
 import android.Manifest;
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -16,14 +18,22 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.transition.ChangeBounds;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
+import android.transition.TransitionManager;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -80,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements
     TextView temp_max;
     TextView wind_speed;
     TextView cloudiness;
+    LinearLayout linearLayout;
+    ViewGroup mRootView;
     Call<Daily> call1;
     Call<ExampleNew> call2;
     MyResultReceiver mReceiver;
@@ -93,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
         boolean gps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
-        boolean net = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+        final boolean net = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 
         if (!net || !gps) {
             Toast.makeText(this, String.valueOf(R.string.noInternet), LENGTH_LONG).show();
@@ -122,20 +134,28 @@ public class MainActivity extends AppCompatActivity implements
 
             Window window = turn_on.getWindow();
             if (turn_on.isShowing()) {
-                window.setBackgroundDrawableResource(R.color.title1);
+                window.setBackgroundDrawableResource(R.color.colorPrimary);
             }
             WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
             lp.copyFrom(window.getAttributes());
             lp.width = WindowManager.LayoutParams.MATCH_PARENT;
             lp.height = WindowManager.LayoutParams.MATCH_PARENT;
             window.setAttributes(lp);
-
         }
+
+        TransitionInflater transitionInflater = TransitionInflater.from(this);
+        Slide slide = new Slide();
+        slide.setDuration(1000);
+        slide.setSlideEdge(Gravity.START);
+        ChangeBounds changeBounds= new ChangeBounds();
+        changeBounds.setDuration(1000);
+        getWindow().setSharedElementEnterTransition(changeBounds);
+        getWindow().setExitTransition(slide);
+
         setContentView(R.layout.main_activity);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar1);
         toolbar.setTitle(R.string.app_name);
-        toolbar.setBackgroundColor(getResources().getColor(R.color.toolbar));
         setSupportActionBar(toolbar);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -149,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements
         wind_speed = (TextView) findViewById(R.id.wind_speed);
         cloudiness = (TextView) findViewById(R.id.cloudiness);
 
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.mainRow);
+        linearLayout = (LinearLayout) findViewById(R.id.mainRow);
         linearLayout.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this) {
             @Override
             public void onSwipeLeft() {
@@ -176,6 +196,13 @@ public class MainActivity extends AppCompatActivity implements
                         MainActivity.this.lat = nextLeft.getLat();
                         MainActivity.this.lon = nextLeft.getLon();
                         setName(nextLeft.getName());
+
+                        toggleVisibility(city, icon , temperature , pressure , humididty , temp_max , wind_speed , cloudiness);
+                        Slide fade = new Slide();
+                        fade.setDuration(400);
+                        fade.setSlideEdge(Gravity.END);
+                        TransitionManager.beginDelayedTransition(linearLayout, fade);
+                        toggleVisibility(city, icon , temperature , pressure , humididty , temp_max , wind_speed , cloudiness);
 
                         getCurrentWeather();
                     }
@@ -212,6 +239,14 @@ public class MainActivity extends AppCompatActivity implements
                         MainActivity.this.lon = nextLeft.getLon();
                         setName(nextLeft.getName());
 
+                        toggleVisibility(city, icon , temperature , pressure , humididty , temp_max , wind_speed , cloudiness);
+                        Slide fade = new Slide();
+                        fade.setDuration(400);
+                        fade.setSlideEdge(Gravity.START);
+                        TransitionManager.beginDelayedTransition(linearLayout, fade);
+                        toggleVisibility(city, icon , temperature , pressure , humididty , temp_max , wind_speed , cloudiness);
+
+
                         getCurrentWeather();
                     }
 
@@ -220,12 +255,20 @@ public class MainActivity extends AppCompatActivity implements
                 }
             }
         });
+
+
         mReceiver = new MyResultReceiver(new Handler());
         mReceiver.setReceiver(this);
 
         getLocationFromSharedPreferences();
     }
 
+    public void toggleVisibility(View... views) {
+        for (View view : views) {
+            boolean isVisible = view.getVisibility() == View.VISIBLE;
+            view.setVisibility(isVisible ? View.INVISIBLE : View.VISIBLE);
+        }
+    }
 
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager
@@ -394,7 +437,7 @@ public class MainActivity extends AppCompatActivity implements
             Map<String, String> query = new HashMap<String, String>();
             /*query.put("lat", String.format(Locale.ENGLISH, "%.6f", this.lat));
             query.put("lon", String.format(Locale.ENGLISH, "%.6f", this.lon));*/
-            query.put("cnt", Integer.toString(6));
+            //query.put("cnt", Integer.toString(5));
             query.put("APPID", "6e29ee73099af2921024c44b9814f7bf");
 
             call1 = Setvice.apiInterface().getDailyForecast(query2, query);
@@ -439,6 +482,8 @@ public class MainActivity extends AppCompatActivity implements
                         }*/
                     } else {
                        noDailyInfo();
+                        Toast.makeText(MainActivity.this, response.code()+ "  " + response.message(), Toast.LENGTH_LONG).show();
+
                     }
 
                 }
@@ -446,9 +491,9 @@ public class MainActivity extends AppCompatActivity implements
                 @Override
                 public void onFailure(Call<Daily> call, Throwable t) {
                     noDailyInfo();
-                   // Toast.makeText(MainActivity.this, t.getStackTrace()[0].toString(), Toast.LENGTH_SHORT).show();
-                    //org.gradle.jvmargs=-Xmx1536m
-                }
+
+                   Toast.makeText(MainActivity.this,t.getMessage()+ "  " +t.getStackTrace()[0].toString(), Toast.LENGTH_SHORT).show();
+                    }
             });
         } else {
             noDailyInfo();
@@ -469,6 +514,8 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void getCurrentWeather() {
+
+
         city.setText(name);
 
         if (isNetworkAvailable() && lat < 400 && lon < 400) {
@@ -491,15 +538,15 @@ public class MainActivity extends AppCompatActivity implements
                                 .load("http://openweathermap.org/img/w/" + example.getWeather().get(0).getIcon() + ".png")
                                 .into(icon);
 
-                        temperature.setText(String.format(Locale.getDefault(), "%.2f", example.getMain().getTemp() - 273.15));
+                        temperature.setText(String.format(Locale.ENGLISH, "%.0f", example.getMain().getTemp() - 273.15)+ " \u00B0");
 
-                        pressure.setText(Integer.toString(example.getMain().getPressure()));
+                        pressure.setText(String.format(Locale.ENGLISH, "%.0f", example.getMain().getPressure()));
 
                         humididty.setText(Integer.toString(example.getMain().getHumidity()));
 
-                        temp_max.setText(String.format(Locale.getDefault(), "%.2f", example.getMain().getTempMax() - 273.15));
+                        temp_max.setText(String.format(Locale.ENGLISH, "%.0f", example.getMain().getTempMax() - 273.15));
 
-                        wind_speed.setText(String.format(Locale.getDefault(), "%.2f", example.getWind().getSpeed()));
+                        wind_speed.setText(String.format(Locale.ENGLISH, "%.0f", example.getWind().getSpeed()));
 
                         cloudiness.setText(Integer.toString(example.getClouds().getAll()));
 
@@ -511,7 +558,7 @@ public class MainActivity extends AppCompatActivity implements
                 @Override
                 public void onFailure(Call<ExampleNew> call, Throwable t) {
                     noInternetCurrent();
-                    Toast.makeText(MainActivity.this, getResources().getString(R.string.noInternet), Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, t.getMessage() + getResources().getString(R.string.noInternet), Toast.LENGTH_LONG).show();
                 }
             });
         } else {
@@ -679,13 +726,14 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void DailyOnClick(int position, Daily mydaily) {
+    public void DailyOnClick(View v, int position, Daily mydaily) {
         int dt = mydaily.getList().get(position).getDt();
         Intent intent = new Intent(MainActivity.this, HourlyForecast.class);
         intent.putExtra("dt", dt);
-        intent.putExtra("lat", mydaily.getCity().getCoord().getLat());
-        intent.putExtra("lon", mydaily.getCity().getCoord().getLon());
-        startActivity(intent);
+        intent.putExtra("lat", lat);
+        intent.putExtra("lon", lon);
+        ActivityOptionsCompat optionsCompat= ActivityOptionsCompat.makeSceneTransitionAnimation(this,v.findViewById(R.id.days), "days");
+        startActivity(intent, optionsCompat.toBundle());
     }
 
     /*@Override

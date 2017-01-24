@@ -40,7 +40,6 @@ public class AddLocation extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         toolbar.setTitle(getResources().getString(R.string.app_name));
-        toolbar.setBackgroundColor(getResources().getColor(R.color.toolbar));
         setSupportActionBar(toolbar);
 
         Button save = (Button) findViewById(R.id.save);
